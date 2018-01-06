@@ -1,0 +1,36 @@
+<table>
+  <thead><tr><td><strong>Red Alliance</strong></td><td><strong>Field</strong></td><td><strong>Blue Alliance</strong></td></tr></thead>
+  <tr>
+    {% assign red_jewel_score = page.red_jewel | times: site.data.scoring.jewel %}
+    {% assign blue_jewel_score = page.blue_jewel | times: site.data.scoring.jewel %}
+    <td class="red">{{ page.red_jewel }} (+{{ red_jewel_score }})</td>
+    <td>Single Jewel Remaining</td>
+    <td class="blue">{{ page.blue_jewel}} (+{{ blue_jewel_score }})</td>
+  </tr>
+  <tr>
+    {% assign red_auto_glyph_score = page.red_auto_glyph | times: site.data.scoring.auto_glyph %}
+    {% assign blue_auto_glyph_score = page.blue_auto_glyph | times: site.data.scoring.auto_glyph %}
+    <td class="red">{{ page.red_auto_glyph }} (+{{ red_auto_glyph_score }})</td>
+    <td>Auto Glyphs</td>
+    <td class="blue">{{ page.blue_auto_glyph }} (+{{ blue_auto_glyph_score }})</td>
+  </tr>
+  <tr>
+    {% assign red_key_score = page.red_key | times: site.data.scoring.key %}
+    {% assign blue_key_score = page.blue_key | times: site.data.scoring.key %}
+    <td class="red">{{ page.red_key }} (+{{ red_key_score }})</td>
+    <td>Cryptobox Keys</td>
+    <td class="blue">{{ page.blue_key}} (+{{ blue_key_score }})</td>
+  </tr>
+  <tr>
+    {% assign red_safe_score = page.red_safe | times: site.data.scoring.safe %}
+    {% assign blue_safe_score = page.blue_safe | times: site.data.scoring.safe %}
+    <td class="red">{{ page.red_safe }} (+{{ red_safe_score }})</td>
+    <td>Robots in Safe Zone</td>
+    <td class="blue">{{ page.blue_safe}} (+{{ blue_safe_score }})</td>
+  </tr>
+  <tr class="bold">
+    <td class="red">{{ red_jewel_score | plus: red_auto_glyph_score | plus: red_key_score | plus: red_safe_score }}</td>
+    <td>Auton Total</td>
+    <td class="blue">{{ blue_jewel_score | plus: blue_auto_glyph_score | plus: blue_key_score | plus: blue_safe_score }}</td>
+  </tr>
+</table>

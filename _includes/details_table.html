@@ -1,0 +1,20 @@
+<table id="details">
+  {% assign blue_teams = page.blue_teams | split: ", " %}
+  {% assign red_teams = page.red_teams | split: ", " %}
+
+  <thead><tr><td><strong>Alliance</strong></td><td colspan="{{ blue_teams | size }}"><strong>Teams</strong></td><td><strong>Score</strong></td></tr></thead>
+  <tr>
+    <td class="red">Red</td>
+    {% for team in red_teams %}
+    <td class="red">{{ team }}</td>
+    {% endfor %}
+    <td class="red">{{ page.red_score }}</td>
+  </tr>
+  <tr>
+    <td class="blue">Blue</td>
+    {% for team in blue_teams %}
+    <td class="blue">{{ team }}</td>
+    {% endfor %}
+    <td class="blue">{{ page.blue_score }}</td>
+  </tr>
+</table>

@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<style>
+  table {
+    text-align: center;
+    border: 2px solid #ddd;
+  }
+  table td {
+    border: 1px solid #ddd;
+  }
+  thead {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #ddd;
+  }
+  .blue {
+    background-color: #eef;
+  }
+  .red {
+    background-color: #fee;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  {% if page.blue_score > page.red_score %}
+  #details .blue {
+    font-weight: bold;
+  }
+  {% elsif page.red_score > page.blue_score %}
+  #details .red {
+    font-weight: bold;
+  }
+  {% endif %}
+</style>
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ page.date | date: date_format }}
+      </time>
+      {% if page.author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+      {% endif %}</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h2>Match Info</h2>
+    {% include details_table.html %}
+
+    <h3>Auton Details</h3>
+    {% include auton_table.html %}
+
+    {{ content }}
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>
