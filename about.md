@@ -10,6 +10,8 @@ It is intended for use during competition to track teams' performances throughou
 
 ## Usage
 
+### Matches
+
 This website is designed to make updating match information simple.
 
 To start, copy the `2018-01-06-example.markdown` file and rename it
@@ -25,3 +27,7 @@ For playoff matches, `Match <#>` can instead be `Semis <#>` or `Finals <#>` as a
 Any additional information can be written under the `### Comments` section as text.
 
 When you are finished with editing the file, commit it and push to GitHub to be deployed to the live site.
+
+### Schedule
+
+This page should be updated with the match schedule for our team. Edit the markdown table to reflect the schedule and bold our team number for each of our matches.

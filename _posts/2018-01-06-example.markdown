@@ -8,8 +8,8 @@ author: "Ryan Siu"
 # Match Info
 
 # Details
-blue_teams:   "310, 479"
-red_teams:    "101, 100"
+blue_teams:   "Team 1, Team 2"
+red_teams:    "Team 3, Team 4"
 blue_score:   484
 red_score:    0
 

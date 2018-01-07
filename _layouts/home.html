@@ -2,9 +2,20 @@
 layout: default
 ---
 
+<style>
+  .post-teams {
+    float: right;
+    font-size: 14px;
+    color: #828282;
+  }
+  .post-link {
+    display: initial;
+  }
+</style>
+
 <div class="home">
 
-  <h1 class="page-heading">Matches</h1>
+  <h1 class="page-header">Matches</h1>
   
   {{ content }}
 
@@ -15,6 +26,7 @@ layout: default
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <span class="post-teams">{{ post.red_teams }} | {{ post.blue_teams }}</span>
         </h2>
       </li>
     {% endfor %}
