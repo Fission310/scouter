@@ -4,15 +4,24 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This website was built by Ryan Siu in the 2017-2018 season using Jekyll's Minima theme.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+It is intended for use during competition to track teams' performances throughout the competition. Statistics that are not made publicly available until after the competition are included in match information.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Usage
 
+This website is designed to make updating match information simple.
 
-[jekyll-organization]: https://github.com/jekyll
+To start, copy the `2018-01-06-example.markdown` file and rename it
+```
+<yyyy>-<mm>-<dd>-match<#>.markdown
+```
+replacing the fields inside angle brackets with the specified information. Make sure that this file remains in the same directory, inside `_posts`.
+
+Replace each field between the `---` marks at the beginning and end of the file with the appropriate information. For example, replace `blue_teams: "310, 479"` with `blue_teams: "123, 456, 789"` if teams `123`, `456`, and `789` were on the blue alliance for a match.
+
+For playoff matches, `Match <#>` can instead be `Semis <#>` or `Finals <#>` as appropriate.
+
+Any additional information can be written under the `### Comments` section as text.
+
+When you are finished with editing the file, commit it and push to GitHub to be deployed to the live site.

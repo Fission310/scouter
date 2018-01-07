@@ -1,0 +1,36 @@
+<table>
+  <thead><tr><td><strong>Red Alliance</strong></td><td><strong>Field</strong></td><td><strong>Blue Alliance</strong></td></tr></thead>
+  <tr>
+    {% assign red_glyph_score = page.red_glyph | times: site.data.scoring.glyph %}
+    {% assign blue_glyph_score = page.blue_glyph | times: site.data.scoring.glyph %}
+    <td class="red">{{ page.red_glyph }} (+{{ red_glyph_score }})</td>
+    <td>Glyphs</td>
+    <td class="blue">{{ page.blue_glyph}} (+{{ blue_glyph_score }})</td>
+  </tr>
+  <tr>
+    {% assign red_row_score = page.red_row | times: site.data.scoring.row %}
+    {% assign blue_row_score = page.blue_row | times: site.data.scoring.row %}
+    <td class="red">{{ page.red_row }} (+{{ red_row_score }})</td>
+    <td>Rows in Cryptobox</td>
+    <td class="blue">{{ page.blue_row }} (+{{ blue_row_score }})</td>
+  </tr>
+  <tr>
+    {% assign red_column_score = page.red_column | times: site.data.scoring.column %}
+    {% assign blue_column_score = page.blue_column | times: site.data.scoring.column %}
+    <td class="red">{{ page.red_column }} (+{{ red_column_score }})</td>
+    <td>Columns in Cryptobox</td>
+    <td class="blue">{{ page.blue_column}} (+{{ blue_column_score }})</td>
+  </tr>
+  <tr>
+    {% assign red_cipher_score = page.red_cipher | times: site.data.scoring.cipher %}
+    {% assign blue_cipher_score = page.blue_cipher | times: site.data.scoring.cipher %}
+    <td class="red">{{ page.red_cipher }} (+{{ red_cipher_score }})</td>
+    <td>Cryptobox Ciphers</td>
+    <td class="blue">{{ page.blue_cipher}} (+{{ blue_cipher_score }})</td>
+  </tr>
+  <tr class="bold">
+    <td class="red">{{ red_glyph_score | plus: red_row_score | plus: red_column_score | plus: red_cipher_score }}</td>
+    <td>Teleop Total</td>
+    <td class="blue">{{ blue_glyph_score | plus: blue_row_score | plus: blue_column_score | plus: blue_cipher_score }}</td>
+  </tr>
+</table>

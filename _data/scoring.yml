@@ -1,6 +1,21 @@
 ---
+# Auton
 jewel:       30
 auto_glyph:  15
 key:         30
 safe:        10
+
+# Teleop
+glyph:       2
+row:         10
+column:      20
+cipher:      30
+
+# Endgame
+zone1:       10
+zone2:       20
+zone3:       40
+upright:     15
+balance:     20
+
 ---
