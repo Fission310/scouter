@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-$table-text-align: left !default;
+$table-text-align: center;
 
 table {
   margin-bottom: $spacing-unit;
@@ -11,7 +11,7 @@ table {
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  border: 2px solid #ddd;
   tr {
     &:nth-child(even) {
       background-color: lighten($grey-color-light, 6%);
@@ -20,8 +20,14 @@ table {
 
   }
 
+  th, thead {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+  }
+
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    border: 1px solid #ddd;
   }
 
   th {
