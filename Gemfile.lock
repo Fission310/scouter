@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/jekyll/minima.git
-  revision: 17f909b8aa1ce4856787256b4291705898cebb82
-  branch: master
-  specs:
-    minima (2.1.1)
-      jekyll (~> 3.5)
-      jekyll-seo-tag (~> 2.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -200,6 +191,8 @@ GEM
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
     mini_portile2 (2.3.0)
+    minima (2.1.1)
+      jekyll (~> 3.3)
     minitest (5.11.1)
     multipart-post (2.0.0)
     net-dns (0.8.0)
@@ -241,7 +234,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
-  minima!
+  minima (~> 2.1.1)
   tzinfo-data
 
 BUNDLED WITH
