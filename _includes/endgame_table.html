@@ -1,43 +1,71 @@
 <table>
-  <thead><tr><td><strong>Red Alliance</strong></td><td><strong>Field</strong></td><td><strong>Blue Alliance</strong></td></tr></thead>
+  <thead><tr>
+    <td><strong>{{ page.red_team1 }}</strong></td>
+    <td><strong>{{ page.red_team2 }}</strong></td>
+    <td><strong>Field</strong></td>
+    <td><strong>{{ page.blue_team1 }}</strong></td>
+    <td><strong>{{ page.blue_team2 }}</strong></td>
+  </tr></thead>
   <tr>
-    {% assign red_zone1_score = page.red_zone1 | times: site.data.scoring.zone1 %}
-    {% assign blue_zone1_score = page.blue_zone1 | times: site.data.scoring.zone1 %}
-    <td class="red">{{ page.red_zone1 }} (+{{ red_zone1_score }})</td>
+    {% assign red1_zone1_score = page.red1_zone1 | times: site.data.scoring.zone1 %}
+    {% assign blue1_zone1_score = page.blue1_zone1 | times: site.data.scoring.zone1 %}
+    {% assign red2_zone1_score = page.red2_zone1 | times: site.data.scoring.zone1 %}
+    {% assign blue2_zone1_score = page.blue2_zone1 | times: site.data.scoring.zone1 %}
+    <td class="red">{{ page.red1_zone1 }} (+{{ red1_zone1_score }})</td>
+    <td class="red">{{ page.red2_zone1 }} (+{{ red2_zone1_score }})</td>
     <td>Relics in Zone 1</td>
-    <td class="blue">{{ page.blue_zone1}} (+{{ blue_zone1_score }})</td>
+    <td class="blue">{{ page.blue1_zone1}} (+{{ blue1_zone1_score }})</td>
+    <td class="blue">{{ page.blue2_zone1}} (+{{ blue2_zone1_score }})</td>
   </tr>
   <tr>
-    {% assign red_zone2_score = page.red_zone2 | times: site.data.scoring.zone2 %}
-    {% assign blue_zone2_score = page.blue_zone2 | times: site.data.scoring.zone2 %}
-    <td class="red">{{ page.red_zone2 }} (+{{ red_zone2_score }})</td>
+    {% assign red1_zone2_score = page.red1_zone2 | times: site.data.scoring.zone2 %}
+    {% assign blue1_zone2_score = page.blue1_zone2 | times: site.data.scoring.zone2 %}
+    {% assign red2_zone2_score = page.red2_zone2 | times: site.data.scoring.zone2 %}
+    {% assign blue2_zone2_score = page.blue2_zone2 | times: site.data.scoring.zone2 %}
+    <td class="red">{{ page.red1_zone2 }} (+{{ red1_zone2_score }})</td>
+    <td class="red">{{ page.red2_zone2 }} (+{{ red2_zone2_score }})</td>
     <td>Relics in Zone 2</td>
-    <td class="blue">{{ page.blue_zone2 }} (+{{ blue_zone2_score }})</td>
+    <td class="blue">{{ page.blue1_zone2 }} (+{{ blue1_zone2_score }})</td>
+    <td class="blue">{{ page.blue2_zone2 }} (+{{ blue2_zone2_score }})</td>
   </tr>
   <tr>
-    {% assign red_zone3_score = page.red_zone3 | times: site.data.scoring.zone3 %}
-    {% assign blue_zone3_score = page.blue_zone3 | times: site.data.scoring.zone3 %}
-    <td class="red">{{ page.red_zone3 }} (+{{ red_zone3_score }})</td>
+    {% assign red1_zone3_score = page.red1_zone3 | times: site.data.scoring.zone3 %}
+    {% assign blue1_zone3_score = page.blue1_zone3 | times: site.data.scoring.zone3 %}
+    {% assign red2_zone3_score = page.red2_zone3 | times: site.data.scoring.zone3 %}
+    {% assign blue2_zone3_score = page.blue2_zone3 | times: site.data.scoring.zone3 %}
+    <td class="red">{{ page.red1_zone3 }} (+{{ red1_zone3_score }})</td>
+    <td class="red">{{ page.red2_zone3 }} (+{{ red2_zone3_score }})</td>
     <td>Relics in Zone 3</td>
-    <td class="blue">{{ page.blue_zone3}} (+{{ blue_zone3_score }})</td>
+    <td class="blue">{{ page.blue1_zone3}} (+{{ blue1_zone3_score }})</td>
+    <td class="blue">{{ page.blue2_zone3}} (+{{ blue2_zone3_score }})</td>
   </tr>
   <tr>
-    {% assign red_upright_score = page.red_upright | times: site.data.scoring.upright %}
-    {% assign blue_upright_score = page.blue_upright | times: site.data.scoring.upright %}
-    <td class="red">{{ page.red_upright }} (+{{ red_upright_score }})</td>
+    {% assign red1_upright_score = page.red1_upright | times: site.data.scoring.upright %}
+    {% assign blue1_upright_score = page.blue1_upright | times: site.data.scoring.upright %}
+    {% assign red2_upright_score = page.red2_upright | times: site.data.scoring.upright %}
+    {% assign blue2_upright_score = page.blue2_upright | times: site.data.scoring.upright %}
+    <td class="red">{{ page.red1_upright }} (+{{ red1_upright_score }})</td>
+    <td class="red">{{ page.red2_upright }} (+{{ red2_upright_score }})</td>
     <td>Relics Upright</td>
-    <td class="blue">{{ page.blue_upright}} (+{{ blue_upright_score }})</td>
+    <td class="blue">{{ page.blue1_upright}} (+{{ blue1_upright_score }})</td>
+    <td class="blue">{{ page.blue2_upright}} (+{{ blue2_upright_score }})</td>
   </tr>
   <tr>
-    {% assign red_balance_score = page.red_balance | times: site.data.scoring.balance %}
-    {% assign blue_balance_score = page.blue_balance | times: site.data.scoring.balance %}
-    <td class="red">{{ page.red_balance }} (+{{ red_balance_score }})</td>
+    {% assign red1_balance_score = page.red1_balance | times: site.data.scoring.balance %}
+    {% assign blue1_balance_score = page.blue1_balance | times: site.data.scoring.balance %}
+    {% assign red2_balance_score = page.red2_balance | times: site.data.scoring.balance %}
+    {% assign blue2_balance_score = page.blue2_balance | times: site.data.scoring.balance %}
+    <td class="red">{{ page.red1_balance }} (+{{ red1_balance_score }})</td>
+    <td class="red">{{ page.red2_balance }} (+{{ red2_balance_score }})</td>
     <td>Robots Balanced</td>
-    <td class="blue">{{ page.blue_balance}} (+{{ blue_balance_score }})</td>
+    <td class="blue">{{ page.blue1_balance}} (+{{ blue1_balance_score }})</td>
+    <td class="blue">{{ page.blue2_balance}} (+{{ blue2_balance_score }})</td>
   </tr>
   <tr class="bold">
-    <td class="red">{{ red_zone1_score | plus: red_zone2_score | plus: red_zone3_score | plus: red_upright_score | plus: red_balance_score }}</td>
+    <td class="red">{{ red1_zone1_score | plus: red1_zone2_score | plus: red1_zone3_score | plus: red1_upright_score | plus: red1_balance_score }}</td>
+    <td class="red">{{ red2_zone1_score | plus: red2_zone2_score | plus: red2_zone3_score | plus: red2_upright_score | plus: red2_balance_score }}</td>
     <td>End Game Total</td>
-    <td class="blue">{{ blue_zone1_score | plus: blue_zone2_score | plus: blue_zone3_score | plus: blue_upright_score | plus: blue_balance_score }}</td>
+    <td class="blue">{{ blue1_zone1_score | plus: blue1_zone2_score | plus: blue1_zone3_score | plus: blue1_upright_score | plus: blue1_balance_score }}</td>
+    <td class="blue">{{ blue2_zone1_score | plus: blue2_zone2_score | plus: blue2_zone3_score | plus: blue2_upright_score | plus: blue2_balance_score }}</td>
   </tr>
 </table>

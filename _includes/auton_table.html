@@ -51,10 +51,14 @@
     <td class="blue">{{ page.blue2_safe}} (+{{ blue2_safe_score }})</td>
   </tr>
   <tr class="bold">
-    <td class="red">{{ red1_jewel_score | plus: red1_auto_glyph_score | plus: red1_key_score | plus: red1_safe_score }}</td>
-    <td class="red">{{ red2_jewel_score | plus: red2_auto_glyph_score | plus: red2_key_score | plus: red2_safe_score }}</td>
+    {% assign red1_total_score = red1_jewel_score | plus: red1_auto_glyph_score | plus: red1_key_score | plus: red1_safe_score %}
+    {% assign red2_total_score = red2_jewel_score | plus: red2_auto_glyph_score | plus: red2_key_score | plus: red2_safe_score %}
+    {% assign blue1_total_score = blue1_jewel_score | plus: blue1_auto_glyph_score | plus: blue1_key_score | plus: blue1_safe_score %}
+    {% assign blue2_total_score = blue2_jewel_score | plus: blue2_auto_glyph_score | plus: blue2_key_score | plus: blue2_safe_score %}
+    <td class="red">{{ red1_total_score }}</td>
+    <td class="red">{{ red2_total_score }}</td>
     <td>Auton Total</td>
-    <td class="blue">{{ blue1_jewel_score | plus: blue1_auto_glyph_score | plus: blue1_key_score | plus: blue1_safe_score }}</td>
-    <td class="blue">{{ blue2_jewel_score | plus: blue2_auto_glyph_score | plus: blue2_key_score | plus: blue2_safe_score }}</td>
+    <td class="blue">{{ blue1_total_score }}</td>
+    <td class="blue">{{ blue2_total_score }}</td>
   </tr>
 </table>
