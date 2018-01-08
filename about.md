@@ -20,7 +20,7 @@ To start, copy the `2018-01-13-example.markdown` file and rename it
 ```
 replacing the fields inside angle brackets with the specified information. Make sure that this file remains in the same directory, inside `_posts`. For playoff matches, `match<##>` can instead be `semis<##>` or `finals<##>` as appropriate.
 
-Replace each field between the `---` marks at the beginning and end of the file with the appropriate information. For example, replace `blue_teams: "310, 479"` with `blue_teams: "123, 456, 789"` if teams `123`, `456`, and `789` are on the blue alliance for a match.
+Replace each field between the `---` marks at the beginning and end of the file with the appropriate information. For example, replace `blue_team1: "310"` with `blue_team1: "123"` if team `123` is the Blue Alliance 1 team for a match.
 
 The `author` of the post should be the name of the scouter.
 
