@@ -6,4 +6,5 @@ permalink: /statistics/
 
 ## Francis Lewis Qualifier
 
-{% include stats_table.html %}
+### Glyphs
+{% include glyphs_table.html %}
