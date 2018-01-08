@@ -26,7 +26,7 @@ layout: default
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          <span class="post-teams">{{ post.red_teams }} | {{ post.blue_teams }}</span>
+          <span class="post-teams">{{ post.red_team1 }}, {{ post.red_team2 }} | {{ post.blue_team1 }}, {{ post.blue_team2 }}</span>
         </h2>
       </li>
     {% endfor %}

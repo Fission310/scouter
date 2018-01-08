@@ -8,20 +8,30 @@ author: "Ryan Siu"
 # Match Info
 
 # Details
-blue_teams:   "310, 479"
-red_teams:    "10293, 9273"
+blue_team1:   "310"
+blue_team2:   "479"
+red_team1:    "10293"
+red_team2:    "9273"
 blue_score:   484
 red_score:    0
 
 # Auton
-blue_jewel:      2
-red_jewel:       0
-blue_auto_glyph: 2
-red_auto_glyph:  0
-blue_key:        1
-red_key:         0
-blue_safe:       2
-red_safe:        0
+blue1_jewel:      1
+red1_jewel:       0
+blue2_jewel:      1
+red2_jewel:       0
+blue1_auto_glyph: 2
+red1_auto_glyph:  0
+blue2_auto_glyph: 0
+red2_auto_glyph:  0
+blue1_key:        1
+red1_key:         0
+blue2_key:        0
+red2_key:         0
+blue1_safe:       1
+red1_safe:        0
+blue2_safe:       1
+red2_safe:        0
 
 # Teleop
 blue_glyph:      12
