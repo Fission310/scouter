@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Match <17>"
+title:  "Match 17"
 date:   2018-01-13
 comp:   "Francis Lewis Qualifier"
 author: "Ryan Siu"
