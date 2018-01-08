@@ -19,7 +19,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   A website containing scouting information for FTC Team 310, Stuy Fission.
 baseurl: "/scouter" # the subpath of your site, e.g. /blog
 url: "https://fission310.github.io/scouter" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  fission310
+github_username:   fission310
+facebook_username: stuyfission
 
 # Build settings
 markdown: kramdown
