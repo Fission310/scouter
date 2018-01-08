@@ -14,13 +14,15 @@ It is intended for use during competition to track teams' performances throughou
 
 This website is designed to make updating match information simple.
 
-To start, copy the `2018-01-06-example.markdown` file and rename it
+To start, copy the `2018-01-13-example.markdown` file and rename it
 ```
 <yyyy>-<mm>-<dd>-match<##>.markdown
 ```
 replacing the fields inside angle brackets with the specified information. Make sure that this file remains in the same directory, inside `_posts`. For playoff matches, `match<##>` can instead be `semis<##>` or `finals<##>` as appropriate.
 
 Replace each field between the `---` marks at the beginning and end of the file with the appropriate information. For example, replace `blue_teams: "310, 479"` with `blue_teams: "123, 456, 789"` if teams `123`, `456`, and `789` are on the blue alliance for a match.
+
+The `author` of the post should be the name of the scouter.
 
 Any additional information can be written under the `### Comments` section as plaintext.
 
