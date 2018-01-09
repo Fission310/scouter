@@ -1,0 +1,98 @@
+{% assign teams = "" %}
+
+{% assign d = "|" %}
+
+{% for post in site.posts %}
+  {% unless post.title == "Match <#>" %}
+
+  {% unless teams contains post.blue_team1 %}
+    {% assign teams = teams | append: post.blue_team1 | append: d %}
+  {% endunless %}
+
+  {% unless teams contains post.blue_team2 %}
+    {% assign teams = teams | append: post.blue_team2 | append: d %}
+  {% endunless %}
+
+  {% unless teams contains post.red_team1 %}
+    {% assign teams = teams | append: post.red_team1 | append: d %}
+  {% endunless %}
+
+  {% unless teams contains post.red_team2 %}
+    {% assign teams = teams | append: post.red_team2 | append: d %}
+  {% endunless %}
+
+  {% endunless %}
+{% endfor %}
+
+{% assign teams = teams | split: d %}
+
+{% assign len = teams | size | minus: 1 %}
+{% assign glyph = 0 %}
+
+<h3>Glyphs</h3>
+<table>
+  {% for i in (0..len) %}
+    <tr>
+      <td>{{ teams[i] }}</td>
+      {% for post in site.posts %}
+        {% unless post.title == "Match <#>" %}
+        {% if teams[i] == post.blue_team1 %}
+          <td>{{ post.blue1_glyph }}</td>
+        {% endif %}
+        {% if teams[i] == post.blue_team2 %}
+          <td>{{ post.blue2_glyph }}</td>
+        {% endif %}
+        {% if teams[i] == post.red_team1 %}
+          <td>{{ post.red1_glyph }}</td>
+        {% endif %}
+        {% if teams[i] == post.red_team2 %}
+          <td>{{ post.red2_glyph }}</td>
+        {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
+
+<h3>Auton</h3>
+<table>
+  {% for i in (0..len) %}
+    <tr>
+      <td>{{ teams[i] }}</td>
+      {% for post in site.posts %}
+        {% unless post.title == "Match <#>" %}
+
+        {% assign blue1_jewel_score = post.blue1_jewel | times: site.data.scoring.jewel %}
+        {% assign blue2_jewel_score = post.blue2_jewel | times: site.data.scoring.jewel %}
+        {% assign red1_jewel_score = post.red1_jewel | times: site.data.scoring.jewel %}
+        {% assign red2_jewel_score = post.red2_jewel | times: site.data.scoring.jewel %}
+        {% assign blue1_auto_glyph_score = post.blue1_auto_glyph | times: site.data.scoring.auto_glyph %}
+        {% assign blue2_auto_glyph_score = post.blue2_auto_glyph | times: site.data.scoring.auto_glyph %}
+        {% assign red1_auto_glyph_score = post.red1_auto_glyph | times: site.data.scoring.auto_glyph %}
+        {% assign red2_auto_glyph_score = post.red2_auto_glyph | times: site.data.scoring.auto_glyph %}
+        {% assign blue1_key_score = post.blue1_key | times: site.data.scoring.key %}
+        {% assign blue2_key_score = post.blue2_key | times: site.data.scoring.key %}
+        {% assign red1_key_score = post.red1_key | times: site.data.scoring.key %}
+        {% assign red2_key_score = post.red2_key | times: site.data.scoring.key %}
+        {% assign blue1_safe_score = post.blue1_safe | times: site.data.scoring.safe %}
+        {% assign blue2_safe_score = post.blue2_safe | times: site.data.scoring.safe %}
+        {% assign red1_safe_score = post.red1_safe | times: site.data.scoring.safe %}
+        {% assign red2_safe_score = post.red2_safe | times: site.data.scoring.safe %}
+
+        {% if teams[i] == post.blue_team1 %}
+          <td>{{ blue1_jewel_score | plus: blue1_auto_glyph_score | plus: blue1_key_score | plus: blue1_safe_score }}</td>
+        {% endif %}
+        {% if teams[i] == post.blue_team2 %}
+          <td>{{ blue2_jewel_score | plus: blue2_auto_glyph_score | plus: blue2_key_score | plus: blue2_safe_score }}</td>
+        {% endif %}
+        {% if teams[i] == post.red_team1 %}
+          <td>{{ red1_jewel_score | plus: red1_auto_glyph_score | plus: red1_key_score | plus: red1_safe_score }}</td>
+        {% endif %}
+        {% if teams[i] == post.red_team2 %}
+          <td>{{ red2_jewel_score | plus: red2_auto_glyph_score | plus: red2_key_score | plus: red2_safe_score }}</td>
+        {% endif %}
+      {% endunless %}
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
