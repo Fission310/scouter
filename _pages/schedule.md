@@ -10,7 +10,7 @@ Note: The below matches are the matches with only teams 310 and 479 competing.
 
 | Match | Red 1   | Red 2   | Blue 1  | Blue 2  |
 |-------|---------|---------|---------|---------|
-| 5     | __479__ | 13372   | 12572   | 12629   |
+| 5     |  13372  | __479__ | 12572   | 12629   |
 
 | Match | Red 1   | Red 2   | Blue 1  | Blue 2  |
 |-------|---------|---------|---------|---------|
