@@ -1,0 +1,79 @@
+---
+layout: post
+title:  "Match 23"
+date:   2018-01-13
+comp:   "Francis Lewis Qualifier"
+author: "Max Lobel"
+
+# Match Info
+
+# Details
+blue_team1:   "4785"
+blue_team2:   "310"
+red_team1:    "13635"
+red_team2:    "12572"
+blue_score:   38
+red_score:    101
+
+# Auton
+blue1_jewel:      0
+red1_jewel:       0
+blue2_jewel:      0
+red2_jewel:       0
+blue1_auto_glyph: 0
+red1_auto_glyph:  0
+blue2_auto_glyph: 0
+red2_auto_glyph:  1
+blue1_key:        0
+red1_key:         0
+blue2_key:        0
+red2_key:         0
+blue1_safe:       0
+red1_safe:        1
+blue2_safe:       1
+red2_safe:        0
+
+# Teleop
+blue1_glyph:      0
+red1_glyph:       6
+blue2_glyph:      4
+red2_glyph:       2
+blue1_row:        0
+red1_row:         2
+blue2_row:        0
+red2_row:         0
+blue1_column:     0
+red1_column:      0
+blue2_column:     1
+red2_column:      0
+blue1_cipher:     0
+red1_cipher:      0
+blue2_cipher:     0
+red2_cipher:      0
+
+# Endgame
+blue1_zone1:      0
+red1_zone1:       0
+blue2_zone1:      0
+red2_zone1:       0
+blue1_zone2:      0
+red1_zone2:       0
+blue2_zone2:      0
+red2_zone2:       0
+blue1_zone3:      0
+red1_zone3:       0
+blue2_zone3:      0
+red2_zone3:       0
+blue1_upright:    0
+red1_upright:     0
+blue2_upright:    0
+red2_upright:     0
+blue1_balance:   0
+red1_balance:    1
+blue2_balance:   0
+red2_balance:    1
+
+---
+
+### Comments
+Blue1 not moving... 
