@@ -10,7 +10,7 @@ author: "Max Lobel"
 # Details
 blue_team1:   "4785"
 blue_team2:   "310"
-red_team1:    "13635"
+red_team1:    "13645"
 red_team2:    "12572"
 blue_score:   38
 red_score:    101

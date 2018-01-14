@@ -11,7 +11,7 @@ author: "Max Lobel"
 blue_team1:   "310"
 blue_team2:   "11997"
 red_team1:    "5711"
-red_team2:    "12176"
+red_team2:    "12178"
 blue_score:   2
 red_score:    36
 

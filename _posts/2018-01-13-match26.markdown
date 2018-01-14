@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Match 19"
+title:  "Match 26"
 date:   2018-01-13
 comp:   "Francis Lewis Qualifier"
 author: "Max Lobel"
@@ -8,12 +8,12 @@ author: "Max Lobel"
 # Match Info
 
 # Details
-blue_team1:   "13351"
-blue_team2:   "5711"
-red_team1:    "13372"
-red_team2:    "13029"
-blue_score:   26
-red_score:    28
+blue_team1:   "10675"
+blue_team2:   "13351"
+red_team1:    "13574"
+red_team2:    "12572"
+blue_score:   65
+red_score:    61
 
 # Auton
 blue1_jewel:      0
@@ -21,24 +21,24 @@ red1_jewel:       0
 blue2_jewel:      0
 red2_jewel:       0
 blue1_auto_glyph: 0
-red1_auto_glyph:  0
-blue2_auto_glyph: 0
+red1_auto_glyph:  1
+blue2_auto_glyph: 1
 red2_auto_glyph:  0
 blue1_key:        0
 red1_key:         0
 blue2_key:        0
 red2_key:         0
 blue1_safe:       1
-red1_safe:        0
-blue2_safe:       0
+red1_safe:        1
+blue2_safe:       1
 red2_safe:        0
 
 # Teleop
-blue1_glyph:      0
-red1_glyph:       3
-blue2_glyph:      3
+blue1_glyph:      3
+red1_glyph:       2
+blue2_glyph:      2
 red2_glyph:       1
-blue1_row:        0
+blue1_row:        1
 red1_row:         1
 blue2_row:        1
 red2_row:         0
@@ -69,12 +69,10 @@ red1_upright:     0
 blue2_upright:    0
 red2_upright:     0
 blue1_balance:   0
-red1_balance:    0
+red1_balance:    1
 blue2_balance:   0
 red2_balance:    0
 
 ---
 
 ### Comments
-Red1 tried jewel
-Blue1 minor penalty 

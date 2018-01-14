@@ -8,7 +8,7 @@ author: "Max Lobel"
 # Match Info
 
 # Details
-blue_team1:   "12689"
+blue_team1:   "12629"
 blue_team2:   "8201"
 red_team1:    "13367"
 red_team2:    "12422"
